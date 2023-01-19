@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9f08959ab1.js" crossorigin="anonymous"></script>    <link rel="stylesheet" href="style.css">
+    <title>Fábio Diniz</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="Logocerto.png" width="180px" alt="Logo Fábio Diniz">
+
+        </div>
+        <ul>
+            <li>
+                <a target="_blank" href="https://www.linkedin.com/in/f%C3%A1bio-diniz-99033915b/">Linkedin</a>
+            </li>
+            <li>
+                <a target="_blank" href="mailto:diniz_moura@hotmail.com">email</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://wa.me/19996948079">Whatsapp</a>
+            </li>
+            
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Fábio Diniz</h1>
+                <h5>Front-End Developer</h5>
+            </div>
+
+            <div onclick="displayabout()" id="arrow">
+                <i id="animation" class="fa-sharp fa-solid fa-arrow-down"></i>
+            </div>
+
+            <div id="about">
+                <p>
+                    Seven years of experience working in many fields of business such as Human Resources, Commercial area and Finance. My last experience in Canada was as a Supervisor at Capilano Group, managing a multicultural team of 15 employees. Having a great opportunity to work with highly skilled people from many different countries, that collaborated a lot with my professional grown. My first experience with Executive Search was working as a Recruitment Consultant at Hays (one of the biggest recruitment company in the world). There I was responsible for the recruitment of Sales, Marketing and HR positions. Currently I am working at Véli as a Senior Tech Recruiter.
+                </p>
+            </div>
+
+            <div class="form">
+                <div>
+                    <p>deixe seu contato!</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="seu melhor email :)">
+                    <button>Enviar!</button>
+
+
+                </form>
+
+
+            </div>
+
+        </section>
+    </main>
+
+    <script>
+        function displayabout() {
+            var arrow = document.getElementById('animation');
+            arrow.classlist.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classlist.toggle('active');
+        }
+
+    </script>
+</body>
+</html>
